@@ -1,0 +1,442 @@
+main {
+  min-height: 80vh;
+  background-image: linear-gradient(rgb(0 102 130) 59%, rgb(43, 62, 80) 100%);
+}
+
+.btn {
+  border-radius: 5px;
+  box-shadow: 3px 2px 5px rgb(0 0 0 / 75%);
+}
+
+.btn:hover {
+  /* box-shadow: 0px 0px 10px 5px rgb(174, 231, 241, 0.3); */
+  box-shadow: 3px 2px 5px rgb(0 0 0 / 75%);
+  transform: scale(1.1, 1.1);
+}
+
+.qtySelector {
+  border-radius: 5px;
+  box-shadow: 3px 2px 5px rgb(0 0 0 / 75%);
+}
+
+a {
+  color: #00bcd4;
+  position: relative;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00bcd4;
+}
+
+.lineStyled::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.lineStyled:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+blockquote i {
+  font-size: 24px;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.list-group-item {
+  background-color: #4e5d6c63;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 3px 2px 5px rgb(0 0 0 / 75%);
+}
+
+.custom-file-label {
+  border-radius: 5px;
+}
+
+thead {
+  background-color: #257ea5;
+}
+
+.navbar {
+  background-color: rgb(0 58 74);
+  /* 00A0D8 */
+  font-size: 16px;
+}
+
+.card {
+  background-color: #4e5d6c63;
+  box-shadow: 3px 2px 5px rgb(0 0 0 / 75%);
+}
+
+.card-title strong {
+  color: white;
+  font-size: 20px;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.page-link {
+  margin: 30px 0px;
+  background-color: #4e5d6c63;
+}
+
+h1 {
+  font-size: 38px;
+  padding: 1rem 0;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 26px;
+  padding: 0.5rem 0;
+  margin: 10px 0;
+}
+
+h3 {
+  padding-top: 1rem;
+  font-size: 22px;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.nav-link {
+  margin: 0px 5px;
+}
+
+.subtotal {
+  margin-top: 74px;
+}
+
+.register-link {
+  color: #df691a;
+  font-weight: bold;
+}
+
+.promo-code {
+  margin-right: 70%;
+}
+
+/* HomeBanner */
+
+.banner-image {
+  background-image: url("./assets/homebanner.jpg");
+  background-color: #cccccc;
+  box-shadow: 5px 5px 10px #081c25, -5px -5px 10px #257ea5;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 50px 0;
+  border-radius: 50px;
+}
+
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.banner-text p {
+  font-size: 26px;
+}
+
+.banner-title {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+/* Loader 2 */
+
+.lds-ripple {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #00bcd4;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+/* Carousel */
+
+#carousel {
+  border-radius: 50px;
+  background-color: #4e5d6c00;
+  box-shadow: 5px 5px 10px #081c25, -5px -5px 10px #257ea5;
+  margin: 60px 0;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-top: -5px;
+}
+
+.carousel img {
+  height: 300px;
+  padding: 30px;
+  border-radius: 50px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel a {
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+/* Meteo-App */
+
+.back {
+  background-image: url("./assets/weather3.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease;
+  width: 50%;
+  height: 100%;
+  border-radius: 30px;
+  margin: auto;
+  box-shadow: 5px 5px 10px #081c25, -5px -5px 10px #257ea5;
+}
+
+.back.warm {
+  background-image: url("./assets/weather3.jpg");
+}
+
+.meteo-main {
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75)); */
+  background-image: linear-gradient(
+    rgba(0, 102, 130, 0.2) 59%,
+    rgba(43, 62, 80, 0.75) 100%
+  );
+  padding: 25px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  height: 600px;
+}
+
+.search-box-meteo {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 75px;
+}
+
+.search-box-meteo .search-bar-meteo {
+  display: block;
+  width: 75%;
+  margin: auto;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: 5px 5px 10px #081c25, -5px -5px 10px #257ea5;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+  color: #313131;
+  font-size: 16px;
+  transition: 0.4s ease;
+}
+
+.search-box-meteo .search-bar-meteo:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location-meteo {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date-meteo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temperature {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+/* Contact Us */
+
+.contact h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Footer */
+
+.footer-menu {
+  background-image: linear-gradient(rgb(43, 62, 80) -30%, rgb(0 102 130) 100%);
+}
+
+.footer-menu ul {
+  padding-inline-start: unset;
+  padding-top: 8px;
+}
+
+.footer-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-banner {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(0 58 74);
+  border-radius: 20px;
+  place-content: center;
+  margin: 30px 0;
+  box-shadow: 5px 5px 10px #081c25, -5px -5px 10px #257ea5;
+}
+
+.orderId {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.checkoutStep {
+  color: #fff;
+}
+
+.badge:after {
+  content: attr(value);
+  font-size: 10px;
+  font-family: "Montserrat";
+  background: #df691a;
+  border-radius: 50%;
+  padding: 2px 5px;
+  position: relative;
+  left: -8px;
+  top: -10px;
+  opacity: 0.9;
+}
+
+.not-found-screen {
+  text-align: center;
+  font-size: 34px;
+}
+
+.not-found-screen span {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.no-result {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 40px;
+}
+
+/* VIDEO */
+
+.myVideo {
+  width: 100%;
+  box-shadow: 5px 5px 10px #081c25, -5px -5px 10px #257ea5;
+  border-radius: 100px;
+}
